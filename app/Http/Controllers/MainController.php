@@ -14,9 +14,10 @@ class MainController extends Controller
     {
         $url  = \URL::current();
         $ogImage = asset('images/og-image.jpg');
-        SEOTools::setTitle('Create your Free Google Sitemap Online - Google XML Sitemaps Generator');
+        SEOTools::setTitle('Free Online Unlimited Google XML Sitemap Generator');
         SEOTools::setDescription('Free Online Unlimited Google XML Sitemap Generator. Free online sitemap generator service, creating an XML sitemap that can be submitted to Google, Bing and other search engines to help them crawl your website better.');
         SEOTools::opengraph()->setUrl($url);
+        SEOTools::addImages($ogImage);
         SEOTools::setCanonical($url);
         SEOTools::opengraph()->addProperty('type', 'articles');
         SEOTools::jsonLd()->addImage($ogImage);

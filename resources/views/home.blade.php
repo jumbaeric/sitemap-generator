@@ -4,12 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
     <meta name="author" content="Eric Jumba">
     <meta name="generator" content="Hugo 0.84.0">
     {!! SEO::generate() !!}
-    <title>Free Google XML Sitemap Generator</title>
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -115,7 +112,7 @@
             <div class="row justify-content-center">
                 <div
                     class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-                    <h1>Free Google XML Sitemap Generator</h1>
+                    <h1>Free Online Unlimited Google XML Sitemap Generator</h1>
                     <h2>Just enter your website URL to create a free google xml sitemap.</h2>
                     <form action="/create" method="GET" id="my_form">
                         @csrf
