@@ -10,8 +10,6 @@
     {!! SEO::generate() !!}
     <title>Free Google XML Sitemap Generator</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
-
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -66,8 +64,8 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    {{-- <li><a class="nav-link scrollto active" href="#hero">Home</a></li> --}}
+                    {{-- <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
@@ -89,7 +87,7 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li> --}}
                     <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -158,27 +156,63 @@
                         <img src="assets/img/about.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-                        <h3>Voluptatem dignissimos provident quasi corporis</h3>
+                        <h3>Our Free Unlimited Google XML Sitemap Generator Tool</h3>
                         <p class="fst-italic">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore
-                            magna aliqua.
+                            We provide a free unlimited Sitemap generator tool that crawls a website and creates an XML file that helps Google, Yandex, Bing, Baidu, and other search engines find site content faster and better understand its structure.
                         </p>
                         <ul>
-                            <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat.</li>
-                            <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate
-                                velit.</li>
-                            <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
-                                mastiro dolore eu fugiat nulla pariatur.</li>
+                            <li><i class="bi bi-check-circle"></i> Free and simple.</li>
+                            <li><i class="bi bi-check-circle"></i> Powerful, yet easy to use</li>
+                            <li><i class="bi bi-check-circle"></i> Crawl unlimited Website URLs..</li>
                         </ul>
-                        <a href="#" class="read-more">Read More <i class="bi bi-long-arrow-right"></i></a>
+                        <a href="#" class="read-more">Generate My Sitemap Now <i class="bi bi-long-arrow-right"></i></a>
                     </div>
                 </div>
 
             </div>
-        </section><!-- End About Section -->
+        </section>
+        <!-- End About Section -->
+
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>How to use our Free Unlimited Google XML Sitemap Generator Tool</h2>
+                    <p>To use our Free Unlimited Google XML Sitemap Generator Tool, simply enter your domain name and wait for the tool to crawl your entire site.  As the tool crawls more pages on your website, it will build your sitemap by appending the URLs to the sitemap file that it creates.  When the crawl is complete, you can then you can download your sitemap and upload it into Google Search Console for Google to easily access. It should be located on your domain at:  domain.com/sitemap.xml.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+                        <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-receipt"></i>
+                            <h4>More Than Just a Sitemap Service</h4>
+                            <p> Our products site/platform-agnostic go-to solutions run in the cloud, so you can start using them in just a few clicks.</p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-cube-alt"></i>
+                            <h4>Simple and straightforward service, effective tool for professionals</h4>
+                            <p>We tried to make the service interface as simple and understandable for everyone as possible. At the same time, the functionality of the service allows you to manage your work at a professional level</p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-images"></i>
+                            <h4>Easy automation of routine processes</h4>
+                            <p>Cloud outsourcing in a couple of clicks is real! Automate the creation of Sitemaps, RSS and Product feeds for your projects with incredibly flexible customization and setting up of the tasks.</p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-shield"></i>
+                            <h4>More reliable and effective than Server-side software and CMS plug-ins</h4>
+                            <p>Our Free Unlimited Google XML Sitemap Generator Tool will work for sites on any platform, programming language, or CMS</p>
+                        </div>
+                    </div>
+                    <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
+                        <img src="assets/img/features.svg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End Features Section -->
 
         <!-- ======= Counts Section ======= -->
         <section id="counts" class="counts">
@@ -186,37 +220,38 @@
 
                 <div class="row counters">
 
-                    <div class="col-lg-3 col-6 text-center">
+                    <div class="col-lg-4 col-6 text-center">
                         <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p>Clients</p>
+                        <p>Free Sitemaps created</p>
                     </div>
 
-                    <div class="col-lg-3 col-6 text-center">
+                    <div class="col-lg-4 col-6 text-center">
                         <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p>Projects</p>
+                        <p>Pages crawled</p>
                     </div>
 
-                    <div class="col-lg-3 col-6 text-center">
+                    <div class="col-lg-4 col-6 text-center">
                         <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
                             class="purecounter"></span>
-                        <p>Hours Of Support</p>
+                        <p>Data transferred</p>
                     </div>
 
-                    <div class="col-lg-3 col-6 text-center">
+                    {{-- <div class="col-lg-3 col-6 text-center">
                         <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
                             class="purecounter"></span>
                         <p>Hard Workers</p>
-                    </div>
+                    </div> --}}
 
                 </div>
 
             </div>
-        </section><!-- End Counts Section -->
+        </section>
+        <!-- End Counts Section -->
 
         <!-- ======= Services Section ======= -->
-        <section id="services" class="services section-bg">
+        {{-- <section id="services" class="services section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -320,52 +355,11 @@
                 </div>
 
             </div>
-        </section><!-- End Services Section -->
-
-        <!-- ======= Features Section ======= -->
-        <section id="features" class="features">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Features</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
-                        sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias
-                        ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
-                        <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-receipt"></i>
-                            <h4>Est labore ad</h4>
-                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-cube-alt"></i>
-                            <h4>Harum esse qui</h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bx bx-images"></i>
-                            <h4>Aut occaecati</h4>
-                            <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bx bx-shield"></i>
-                            <h4>Beatae veritatis</h4>
-                            <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-                        </div>
-                    </div>
-                    <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
-                        <img src="assets/img/features.svg" alt="" class="img-fluid">
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- End Features Section -->
+        </section> --}}
+        <!-- End Services Section -->
 
         <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials section-bg">
+        {{-- <section id="testimonials" class="testimonials section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -458,10 +452,11 @@
                 </div>
 
             </div>
-        </section><!-- End Testimonials Section -->
+        </section> --}}
+        <!-- End Testimonials Section -->
 
         <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
+        {{-- <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -631,10 +626,11 @@
                 </div>
 
             </div>
-        </section><!-- End Portfolio Section -->
+        </section> --}}
+        <!-- End Portfolio Section -->
 
         <!-- ======= Pricing Section ======= -->
-        <section id="pricing" class="pricing section-bg">
+        {{-- <section id="pricing" class="pricing section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -718,10 +714,11 @@
                 </div>
 
             </div>
-        </section><!-- End Pricing Section -->
+        </section> --}}
+        <!-- End Pricing Section -->
 
         <!-- ======= Frequently Asked Questions Section ======= -->
-        <section id="faq" class="faq">
+        {{-- <section id="faq" class="faq">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -810,10 +807,11 @@
                 </div>
 
             </div>
-        </section><!-- End Frequently Asked Questions Section -->
+        </section> --}}
+        <!-- End Frequently Asked Questions Section -->
 
         <!-- ======= Contact Section ======= -->
-        <section id="contact" class="contact section-bg">
+        {{-- <section id="contact" class="contact section-bg">
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
@@ -890,7 +888,8 @@
                 </div>
 
             </div>
-        </section><!-- End Contact Section -->
+        </section> --}}
+        <!-- End Contact Section -->
 
     </main><!-- End #main -->
 
@@ -904,39 +903,39 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>Techie</h3>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Waiyaki Way, Westlands <br>
+                            Nairobi<br>
+                            Kenya <br><br>
+                            <strong>Phone:</strong> +254 723 777 618<br>
+                            <strong>Email:</strong> info@juliwebconsultancy.com<br>
                         </p>
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="#">Home</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/who-we-are/">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/digital-marketing/">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/contact/">Contact Us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/blog/">Blog</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-design/">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-mobile-app-development/web-application-development/">Web Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-design/start-up-web-design/">Start=Up Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-design/e-commerce-website-design/">Ecommerce Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/digital-marketing/">Search Engine Optimization</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Join Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <p>Get access to free materials about Search Engine Optimization</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -966,11 +965,11 @@
                     </div>
                 </div>
                 <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                    <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://twitter.com/JuliConsultancy" class="twitter"><i class="bx bxl-twitter"></i></a>
+                    <a href="https://www.facebook.com/juliwebconsultancy/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/juliwebconsultancy/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                    <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --}}
                 </div>
             </div>
 
