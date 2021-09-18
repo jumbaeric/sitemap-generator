@@ -12,13 +12,14 @@ class MainController extends Controller
     //
     public function index()
     {
+        $url  = \URL::current();
+        $ogImage = asset('images/og-image.jpg');
         SEOTools::setTitle('Create your Free Google Sitemap Online - Google XML Sitemaps Generator');
         SEOTools::setDescription('Free Online Unlimited Google XML Sitemap Generator. Free online sitemap generator service, creating an XML sitemap that can be submitted to Google, Bing and other search engines to help them crawl your website better.');
-        SEOTools::opengraph()->setUrl('http://current.url.com');
-        SEOTools::setCanonical('https://codecasts.com.br/lesson');
+        SEOTools::opengraph()->setUrl($url);
+        SEOTools::setCanonical($url);
         SEOTools::opengraph()->addProperty('type', 'articles');
-        SEOTools::twitter()->setSite('@LuizVinicius73');
-        SEOTools::jsonLd()->addImage('https://codecasts.com.br/img/logo.jpg');
+        SEOTools::jsonLd()->addImage($ogImage);
 
         return view('home');
     }
