@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Spatie\Sitemap\SitemapGenerator;
 use Illuminate\Support\Facades\Storage;
 use Artesaos\SEOTools\Facades\SEOTools;
+use App\Models\Websitescrawl;
 
 class MainController extends Controller
 {
@@ -27,7 +28,7 @@ class MainController extends Controller
 
     public function create(Request $request)
     {
-        $filename = rand(10, 10000);
+        $filename = rand(10, 100000000000);
         $path = 'sitemaps/sitemap_' . $filename . '.xml';
         $url = $request->url;
         $fullpath = public_path($path);
@@ -35,6 +36,19 @@ class MainController extends Controller
         $data = array(
             'path' => $path,
         );
+
+        // save crawled website
+        $Websitescrawl = new Websitescrawl();
+        $Websitescrawl->ip = agent()->ip;
+        $Websitescrawl->browser = agent()->browser->name;
+        $Websitescrawl->device = agent()->device->type;
+        $Websitescrawl->platform = agent()->os->name;
+        $Websitescrawl->isBot = agent()->isBot;
+        $Websitescrawl->bot = agent()->bot;
+        $Websitescrawl->website = $url;
+        $Websitescrawl->sitemap = $path;
+        $Websitescrawl->save();
+
         return json_encode($data);
     }
 

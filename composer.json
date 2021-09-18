@@ -12,6 +12,7 @@
         "guzzlehttp/guzzle": "^7.3",
         "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
+        "pharaonic/laravel-agents-detector": "^1.0",
         "spatie/laravel-sitemap": "^5.9"
     },
     "require-dev": {
