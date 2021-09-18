@@ -16,15 +16,15 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('public/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('public/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('public/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 
     <style>
         div#loader {
@@ -51,6 +51,18 @@
 
     </style>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNEEQ578Q3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WNEEQ578Q3');
+    </script>
 </head>
 
 <body>
@@ -113,14 +125,15 @@
                                     placeholder="Your Website URL" aria-label="Website URL">
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="btn-get-started" style="background: inherit;">Create</button>
+                                <button type="submit" class="btn-get-started"
+                                    style="background: inherit;">Create</button>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-12 crawling">
                                 <!-- Image loader -->
                                 <div id='loader' style='display: none;'>
                                     <img src="{{ asset('images/loader.gif') }}" width='64px' height='64px'>
-                                    <div class="col-12">
+                                    <div class="col-12 timer">
                                         <label id="minutes">00</label>:<label id="seconds">00</label>
                                     </div>
                                 </div>
@@ -158,14 +171,17 @@
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h3>Our Free Unlimited Google XML Sitemap Generator Tool</h3>
                         <p class="fst-italic">
-                            We provide a free unlimited Sitemap generator tool that crawls a website and creates an XML file that helps Google, Yandex, Bing, Baidu, and other search engines find site content faster and better understand its structure.
+                            We provide a free unlimited Sitemap generator tool that crawls a website and creates an XML
+                            file that helps Google, Yandex, Bing, Baidu, and other search engines find site content
+                            faster and better understand its structure.
                         </p>
                         <ul>
                             <li><i class="bi bi-check-circle"></i> Free and simple.</li>
                             <li><i class="bi bi-check-circle"></i> Powerful, yet easy to use</li>
                             <li><i class="bi bi-check-circle"></i> Crawl unlimited Website URLs..</li>
                         </ul>
-                        <a href="#" class="read-more">Generate My Sitemap Now <i class="bi bi-long-arrow-right"></i></a>
+                        <a href="#" class="read-more">Generate My Sitemap Now <i
+                                class="bi bi-long-arrow-right"></i></a>
                     </div>
                 </div>
 
@@ -179,7 +195,12 @@
 
                 <div class="section-title">
                     <h2>How to use our Free Unlimited Google XML Sitemap Generator Tool</h2>
-                    <p>To use our Free Unlimited Google XML Sitemap Generator Tool, simply enter your domain name and wait for the tool to crawl your entire site.  As the tool crawls more pages on your website, it will build your sitemap by appending the URLs to the sitemap file that it creates.  When the crawl is complete, you can then you can download your sitemap and upload it into Google Search Console for Google to easily access. It should be located on your domain at:  domain.com/sitemap.xml.</p>
+                    <p>To use our Free Unlimited Google XML Sitemap Generator Tool, simply enter your domain name and
+                        wait for the tool to crawl your entire site. As the tool crawls more pages on your website, it
+                        will build your sitemap by appending the URLs to the sitemap file that it creates. When the
+                        crawl is complete, you can then you can download your sitemap and upload it into Google Search
+                        Console for Google to easily access. It should be located on your domain at:
+                        domain.com/sitemap.xml.</p>
                 </div>
 
                 <div class="row">
@@ -187,22 +208,28 @@
                         <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
                             <i class="bx bx-receipt"></i>
                             <h4>More Than Just a Sitemap Service</h4>
-                            <p> Our products site/platform-agnostic go-to solutions run in the cloud, so you can start using them in just a few clicks.</p>
+                            <p> Our products site/platform-agnostic go-to solutions run in the cloud, so you can start
+                                using them in just a few clicks.</p>
                         </div>
                         <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
                             <i class="bx bx-cube-alt"></i>
                             <h4>Simple and straightforward service, effective tool for professionals</h4>
-                            <p>We tried to make the service interface as simple and understandable for everyone as possible. At the same time, the functionality of the service allows you to manage your work at a professional level</p>
+                            <p>We tried to make the service interface as simple and understandable for everyone as
+                                possible. At the same time, the functionality of the service allows you to manage your
+                                work at a professional level</p>
                         </div>
                         <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
                             <i class="bx bx-images"></i>
                             <h4>Easy automation of routine processes</h4>
-                            <p>Cloud outsourcing in a couple of clicks is real! Automate the creation of Sitemaps, RSS and Product feeds for your projects with incredibly flexible customization and setting up of the tasks.</p>
+                            <p>Cloud outsourcing in a couple of clicks is real! Automate the creation of Sitemaps, RSS
+                                and Product feeds for your projects with incredibly flexible customization and setting
+                                up of the tasks.</p>
                         </div>
                         <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
                             <i class="bx bx-shield"></i>
                             <h4>More reliable and effective than Server-side software and CMS plug-ins</h4>
-                            <p>Our Free Unlimited Google XML Sitemap Generator Tool will work for sites on any platform, programming language, or CMS</p>
+                            <p>Our Free Unlimited Google XML Sitemap Generator Tool will work for sites on any platform,
+                                programming language, or CMS</p>
                         </div>
                     </div>
                     <div class="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
@@ -915,21 +942,34 @@
                         <h4>Useful Links</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/who-we-are/">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/digital-marketing/">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/contact/">Contact Us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/blog/">Blog</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/who-we-are/">About us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/solutions/digital-marketing/">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/contact/">Contact Us</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/blog/">Blog</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-design/">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-mobile-app-development/web-application-development/">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-design/start-up-web-design/">Start=Up Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/web-design/e-commerce-website-design/">Ecommerce Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a target="_blank" href="https://juliwebconsultancy.com/solutions/digital-marketing/">Search Engine Optimization</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/solutions/web-design/">Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/solutions/web-mobile-app-development/web-application-development/">Web
+                                    Development</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/solutions/web-design/start-up-web-design/">Start=Up
+                                    Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/solutions/web-design/e-commerce-website-design/">Ecommerce
+                                    Web Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a target="_blank"
+                                    href="https://juliwebconsultancy.com/solutions/digital-marketing/">Search Engine
+                                    Optimization</a></li>
                         </ul>
                     </div>
 
@@ -965,9 +1005,12 @@
                     </div>
                 </div>
                 <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                    <a href="https://twitter.com/JuliConsultancy" class="twitter"><i class="bx bxl-twitter"></i></a>
-                    <a href="https://www.facebook.com/juliwebconsultancy/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                    <a href="https://www.instagram.com/juliwebconsultancy/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                    <a href="https://twitter.com/JuliConsultancy" class="twitter"><i
+                            class="bx bxl-twitter"></i></a>
+                    <a href="https://www.facebook.com/juliwebconsultancy/" class="facebook"><i
+                            class="bx bxl-facebook"></i></a>
+                    <a href="https://www.instagram.com/juliwebconsultancy/" class="instagram"><i
+                            class="bx bxl-instagram"></i></a>
                     {{-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                     <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> --}}
                 </div>
@@ -981,20 +1024,20 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="{{ asset('public/assets/vendor/aos/aos.js') }}"></script>
-    <script src="{{ asset('public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('public/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('public/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('public/assets/vendor/php-email-form/validate.js') }}"></script>
-    <script src="{{ asset('public/assets/vendor/purecounter/purecounter.js') }}"></script>
-    <script src="{{ asset('public/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset('assets/vendor/purecounter/purecounter.js') }}"></script>
+    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{ asset('public/assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="{{ asset('public/js/ajax.js') }}"></script>
+    <script src="{{ asset('js/ajax.js') }}"></script>
 
 </body>
 
