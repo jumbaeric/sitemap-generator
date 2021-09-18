@@ -32,7 +32,7 @@ class MainController extends Controller
             'url'          => 'required|url',
             'g-recaptcha-response' => 'required|captcha',
         ]);
-        $filename = rand(10, 100000000000);
+        $filename = time();
         $path = 'sitemaps/sitemap_' . $filename . '.xml';
         $url = $request->url;
         $fullpath = public_path($path);
