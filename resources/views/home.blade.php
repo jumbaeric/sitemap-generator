@@ -125,7 +125,7 @@
                                 <button type="submit" class="btn-get-started"
                                     style="background: linear-gradient( 45deg, #5846f9 0%, #7b27d8 100%);">Create</button>
                             </div>
-
+                            {!! NoCaptcha::display(['data-theme' => 'dark']) !!}
                             <div class="col-12 crawling">
                                 <!-- Image loader -->
                                 <div id='loader' style='display: none;'>
@@ -146,6 +146,7 @@
                             </div>
                         </div>
                     </form>
+                    {!! NoCaptcha::renderJs() !!}
                     {{-- <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div> --}}
                 </div>
                 <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
@@ -1032,7 +1033,6 @@
 
     <!-- Template Main JS File -->
     <script src="{{ asset('assets/js/main.js') }}"></script>
-
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="{{ asset('js/ajax.js') }}"></script>
