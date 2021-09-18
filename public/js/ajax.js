@@ -4,11 +4,14 @@ $("#my_form").submit(function(event) {
     var request_method = $(this).attr("method"); //get form GET/POST method
     var form_data = $(this).serialize(); //Encode form elements for submission
 
-    $.ajax({
+	$("#error").hide();
+    
+	$.ajax({
         url: post_url,
         type: request_method,
         data: form_data,
         beforeSend: function() {
+			$("#error").hide();
             $("#loader").show();
             $(".download").hide();
             $(':input[type="submit"]').prop('disabled', true);
