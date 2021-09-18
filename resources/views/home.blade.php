@@ -129,6 +129,7 @@
                             <div class="col-12 crawling">
                                 <!-- Image loader -->
                                 <div id='loader' style='display: none;'>
+                                    <h3>Please wait, your sitemap is being created ..</h3>
                                     <img src="{{ asset('images/loader.gif') }}" width='64px' height='64px'>
                                     <div class="col-12 timer">
                                         <label id="minutes">00</label>:<label id="seconds">00</label>
