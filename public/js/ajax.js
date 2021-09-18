@@ -21,6 +21,13 @@ $("#my_form").submit(function(event) {
         },
         complete: function(data) {
             $("#loader").hide();
+        },
+        error: function(response) {
+            $(':input[type="submit"]').prop('disabled', false);
+			var error = JSON.parse(response.responseText);
+            $('#error').text(error['errors']['url']);
+            $('#error').text(error['errors']['g-recaptcha-response']);
+            $("#error").show();
         }
     });
 });

@@ -28,6 +28,10 @@ class MainController extends Controller
 
     public function create(Request $request)
     {
+        $request->validate([
+            'url'          => 'required|url',
+            'g-recaptcha-response' => 'required|captcha',
+        ]);
         $filename = rand(10, 100000000000);
         $path = 'sitemaps/sitemap_' . $filename . '.xml';
         $url = $request->url;

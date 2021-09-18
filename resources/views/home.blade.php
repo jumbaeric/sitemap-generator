@@ -126,6 +126,7 @@
                                     style="background: linear-gradient( 45deg, #5846f9 0%, #7b27d8 100%);">Create</button>
                             </div>
                             {!! NoCaptcha::display(['data-theme' => 'dark']) !!}
+                            <div id="error" class="alert alert-danger" role="alert" style='display: none;'></div>
                             <div class="col-12 crawling">
                                 <!-- Image loader -->
                                 <div id='loader' style='display: none;'>
@@ -961,7 +962,7 @@
                                     href="https://juliwebconsultancy.com/solutions/web-mobile-app-development/web-application-development/">Web
                                     Development</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a target="_blank"
-                                    href="https://juliwebconsultancy.com/solutions/web-design/start-up-web-design/">Start=Up
+                                    href="https://juliwebconsultancy.com/solutions/web-design/start-up-web-design/">Start-Up
                                     Web Design</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a target="_blank"
                                     href="https://juliwebconsultancy.com/solutions/web-design/e-commerce-website-design/">Ecommerce
