@@ -1702,6 +1702,14 @@ section {
 
 /* Custom Styles */
 
+#hero {
+    background: black;
+}
+
+.btn-primary {
+    background: linear-gradient( 45deg, #5846f9 0%, #7b27d8 100%);
+}
+
 section#features {
     padding-top: 0px;
 }

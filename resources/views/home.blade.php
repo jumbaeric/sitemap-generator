@@ -119,11 +119,11 @@
                         <div class="row g-3">
                             <div class="col-12">
                                 <input type="url" required name="url" class="form-control"
-                                    placeholder="Your Website URL" aria-label="Website URL">
+                                    placeholder="https://yourwebsite.com" aria-label="Website URL">
                             </div>
                             <div class="col-12">
                                 <button type="submit" class="btn-get-started"
-                                    style="background: inherit;">Create</button>
+                                    style="background: linear-gradient( 45deg, #5846f9 0%, #7b27d8 100%);">Create</button>
                             </div>
 
                             <div class="col-12 crawling">
